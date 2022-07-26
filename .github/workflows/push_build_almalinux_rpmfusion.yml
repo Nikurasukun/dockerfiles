@@ -2,6 +2,7 @@ name: Build and publish a Docker image to ghcr.io
 on:
   schedule:
     - cron: "0 0 * * 0"
+  workflow_dispatch:
 
 jobs:
   docker_publish:
